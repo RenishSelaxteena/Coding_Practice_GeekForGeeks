@@ -1,0 +1,12 @@
+https://www.geeksforgeeks.org/problems/odd-or-even3618/1
+import java.util.*;
+class Solution {
+    static boolean isEven(int n) {
+        if (n >= 1) {
+            return n % 2 == 0;
+        } else {
+            return false;
+        }
+    }  
+    
+}
