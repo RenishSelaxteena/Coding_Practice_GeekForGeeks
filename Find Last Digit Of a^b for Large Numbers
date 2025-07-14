@@ -1,0 +1,14 @@
+// User function Template for Java
+https://www.geeksforgeeks.org/problems/find-last-digit-of-ab-for-large-numbers1936/1
+class Solution {
+    static int getLastDigit(String a, String b) {
+        int a1 = Integer.parseInt(a); //str --> int
+        int b1 = Integer.parseInt(b); //str --> int
+        double c = Math.pow(a1,b1); // a**b doesnt work cuz java doesnt have a thing like tha
+        String d = String.valueOf((long)c); // double --> long --> str to avoid .0
+        int e = d.length(); //find length 
+        return d.charAt(e-1) - '0'; // digitchar - 0 convert char to int
+        
+        
+    }
+}
