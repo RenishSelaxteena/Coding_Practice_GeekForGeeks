@@ -1,0 +1,17 @@
+// User function Template for Java
+https://www.geeksforgeeks.org/problems/reverse-digit0316/1
+
+class Solution {
+    public int reverseDigits(int n) {
+        String num = String.valueOf(n);
+        String value = null;
+        for(int i=num.length() - 1 ;i>=0;i--){
+            value += num.charAt(i);
+            
+        }
+        int ans = Integer.parseInt(value);
+        return ans;
+    
+        
+    }
+}
