@@ -1,0 +1,16 @@
+https://www.geeksforgeeks.org/problems/power-of-numbers-1587115620/1
+import java.util.*;
+class Solution {
+    public int reverseExponentiation(int n) {
+        String reverse = String.valueOf(n);
+        String value = "";
+        for(int i=reverse.length() -1;i>=0;i--){
+            value += reverse.charAt(i);
+            
+        }
+        int power = Integer.parseInt(value);
+        int result = (int)Math.pow(n,power);
+        return result;
+        
+    }
+}
