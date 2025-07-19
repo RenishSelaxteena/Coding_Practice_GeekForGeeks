@@ -1,0 +1,9 @@
+https://www.geeksforgeeks.org/problems/palindrome0746/1
+class Solution {
+    public boolean isPalindrome(int n) {
+        String num = String.valueOf(n);
+        String reverse = new StringBuilder(num).reverse().toString();
+        return num.equals(reverse);
+        
+    }
+}
