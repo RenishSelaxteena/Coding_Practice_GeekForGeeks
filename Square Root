@@ -1,0 +1,8 @@
+https://www.geeksforgeeks.org/problems/square-root/1
+class Solution {
+    int floorSqrt(int n) {
+        double answer = Math.sqrt(n);
+        return (int)answer;
+        
+    }
+}
