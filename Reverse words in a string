@@ -1,0 +1,9 @@
+https://www.geeksforgeeks.org/problems/reverse-words-in-a-given-string5459/1
+
+class Solution:
+    def reverseWords(self, s):
+        splited = s.split(".")
+        removed = [i for i in splited if i]
+        reverse = removed[::-1]
+        return ".".join(reverse)
+        
