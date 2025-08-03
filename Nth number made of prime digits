@@ -1,0 +1,11 @@
+https://www.geeksforgeeks.org/problems/nth-number-made-of-prime-digits4319/1
+class Solution:
+    def primeDigits(self,n):
+        prime = ['2','3','5','7']
+        res = ""
+        while n>0:
+            n = n-1
+            res = prime[n%4]+res
+            n = n//4
+            
+        return res
